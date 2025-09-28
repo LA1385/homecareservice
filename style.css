@@ -1,0 +1,130 @@
+/* OVERALL STYLE FOR THIS PROJECT */
+body{
+    margin-top: 0;
+    padding: 0;
+}
+/* The top-Header area */
+.header-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color:rgb(80, 80, 241);
+    color: white;
+    font-size: small;
+    width: 100%;
+}
+#right-media span{
+padding-right: 30px;
+}
+#left-media span {
+padding-left: 30px;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    font-size: small;
+}
+/* Trigram area */
+#trigram{
+    display: none;
+}
+/* Image/logo area */
+#logo img{
+    height: 60px;
+    width: 100px;
+}
+/* mini-nav area */
+#mini-nav{
+    display: flex;
+    flex-direction: row;
+}
+#mini-nav li{
+    padding-right: 40px;
+    list-style: none;
+}
+#mini-nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#mini-nav a:hover{
+    color:blue ;
+}
+/* button area */
+#entry i{
+    color: black;
+    font-weight: bold;
+    padding-right: 7px;
+}
+#entry button{
+    padding: 10px;
+    color: white;
+    border-radius:20px;
+    padding-right: 7px;
+    border: none;
+}
+#entry button:nth-child(2){
+    background-color: rgb(80, 80, 241);
+}
+#entry button:nth-child(3) {
+    background-color:black;
+}
+
+/* Home section */
+#home{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(80, 80, 241);
+    padding: 10%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home h1{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 3rem;
+}
+.booking{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 10px;
+    margin-top: 5%;
+    width: 580px;
+    border-radius: 10px;
+}
+#location {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#service {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 70px;
+    height: 20;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin-right: 10px;
+}
