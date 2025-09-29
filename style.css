@@ -2,9 +2,11 @@
 body{
     margin-top: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* The top-Header area */
 .header-media{
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,6 +63,11 @@ padding-left: 30px;
     color:blue ;
 }
 /* button area */
+#entry{
+    display: flex;
+    align-items: center;
+
+}
 #entry i{
     color: black;
     font-weight: bold;
@@ -72,12 +79,16 @@ padding-left: 30px;
     border-radius:20px;
     padding-right: 7px;
     border: none;
+    margin-right: 5px;
 }
 #entry button:nth-child(2){
     background-color: rgb(80, 80, 241);
 }
 #entry button:nth-child(3) {
     background-color:black;
+}
+#entry button:nth-child(4){
+    background-color: #bbb;
 }
 
 /* Home section */
@@ -127,4 +138,83 @@ padding-left: 30px;
     flex-direction: row;
     font-weight: bold;
     margin-right: 10px;
+}
+
+@media screen and (max-width:1023px) and (min-width:768px){
+    /* header area */
+    .header-nav {
+            padding-left: 0.5%;
+            padding-right: 0.5%;
+        }
+    /* Header-nav area */
+   #mini-nav{
+    display: none;
+   } 
+   #trigram{
+    display: flex;
+    margin-left: 10px;
+    font-weight: bold;
+   }
+   #trigram button{
+    border-radius: 5px;
+    color:black ;
+    background-color: grey;
+    padding: 10px;
+   }
+}
+
+@media screen and (max-width:767px) and (min-width:425px){
+    /* header media area */
+    .header-nav{
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+    #right-media{
+        display: none;
+    }
+    #left-media{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Header-nav area */
+    #mini-nav {
+        display: none;
+    }
+
+    #trigram {
+        display: flex;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    #trigram button {
+        border-radius: 5px;
+        color: black;
+        background-color: grey;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:424px){
+    /* media area */
+    #right-media {
+        display: none;
+    }
+    /* Header-nav area */
+    #mini-nav {
+        display: none;
+    }
+
+    #trigram {
+        display: flex;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    #trigram button {
+        border-radius: 5px;
+        color: black;
+        background-color: grey;
+        padding: 10px;
+    }
 }
