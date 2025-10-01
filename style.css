@@ -6,9 +6,9 @@ body{
 }
 /* The top-Header area */
 .header-media{
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
+    margin-right: 0px;
     align-items: center;
     justify-content: space-between;
     padding: 1%;
@@ -17,13 +17,14 @@ body{
     background-color:rgb(80, 80, 241);
     color: white;
     font-size: small;
-    width: 100%;
 }
 #right-media span{
 padding-right: 30px;
+flex-wrap: wrap;
 }
 #left-media span {
 padding-left: 30px;
+flex-wrap: wrap;
 }
 
 .header-nav{
@@ -94,7 +95,6 @@ padding-left: 30px;
 /* Home section */
 #home{
     height: 300px;
-    width: 100%;
     background-color: rgb(80, 80, 241);
     padding: 10%;
     color: white;
@@ -121,23 +121,46 @@ padding-left: 30px;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 20;
     display: flex;
     flex-direction: row;
     font-weight: bold;
     margin-right: 10px;
 }
+#location1{
+    background-color: #ddd;
+    color: blue;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
 #service {
     border: 1px solid grey;
     border-radius: 10px;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 70px;
-    height: 20;
     display: flex;
     flex-direction: row;
     font-weight: bold;
     margin-right: 10px;
+}
+#service1{
+background-color: #ddd;
+color: blue;
+border-radius: 50%;
+padding: 10px;
+margin-right: 10px;
+}
+#icon{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    color: white;
+    background-color: rgb(80, 80, 241);
+    border-radius: 10px;
 }
 
 @media screen and (max-width:1023px) and (min-width:768px){
@@ -167,7 +190,7 @@ padding-left: 30px;
     /* header media area */
     .header-nav{
         padding-left: 0.5%;
-        padding-right: 0.5%;
+        padding-right: 1%;
     }
     #right-media{
         display: none;
@@ -193,6 +216,52 @@ padding-left: 30px;
         background-color: grey;
         padding: 10px;
     }
+/* Home section */
+#home {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.booking {
+    width: 200px;
+    height: 170px;
+    font-size: 12px;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+#location {
+    padding-top: 2.5px;
+    display: flex;
+    text-align: left;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+
+#service {
+    border: 1px solid grey;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+#icon {
+    text-align: center;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+}
 }
 
 @media screen and (max-width:424px){
@@ -207,7 +276,7 @@ padding-left: 30px;
 
     #trigram {
         display: flex;
-        margin-left: 10px;
+        margin-left: 5px;
         font-weight: bold;
     }
 
@@ -217,4 +286,51 @@ padding-left: 30px;
         background-color: grey;
         padding: 10px;
     }
+/* Home section */
+#home {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.booking {
+    width: 200px;
+    height: 170px;
+    font-size: 12px;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+#location {
+    padding-top: 2.5px;
+    display: flex;
+    text-align: left;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+
+#service {
+    border: 1px solid grey;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+#icon {
+    text-align: center;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+}
 }
