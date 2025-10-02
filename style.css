@@ -163,6 +163,75 @@ margin-right: 10px;
     border-radius: 10px;
 }
 
+/* Booking section area */
+.step-booking{
+    background-color: #ccc;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#steps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#step-item{
+    position: relative;
+    height: 120px;
+    width: 120px;
+}
+.main-circle{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease;
+    
+}
+
+/* border color for each steps */
+#step-item:nth-child(1) .main-circle{
+    border:2px solid yellow;
+    color: blue;
+}
+#step-item:nth-child(3) .main-circle{
+    border:2px solid blue;
+    color: yellow;
+}
+#step-item:nth-child(5) .main-circle {
+    border:2px solid yellow;
+    color: blue;
+}
+#step-item:nth-child(7) .main-circle {
+    border:2px solid blue;
+    color: yellow;
+}
+.step-arrow i {
+    font-size: 25px;
+    transform: scaleY(0.5);
+}
+/* styling individual arrows */
+.step-arrow:nth-child(2) i{
+    color: yellow;
+}
+.step-arrow:nth-child(4) i {
+    color: blue;
+}
+.step-arrow:nth-child(6) i {
+    color: yellow;
+}
+/* Styling icons */
+#step-item .main-circle .icon:nth-child(1){
+    font-size: 30px;
+}
+
 @media screen and (max-width:1023px) and (min-width:768px){
     /* header area */
     .header-nav {
@@ -218,10 +287,11 @@ margin-right: 10px;
     }
 /* Home section */
 #home {
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -235,7 +305,7 @@ margin-right: 10px;
     height: 170px;
     font-size: 12px;
     flex-direction: column;
-    margin-left: 50px;
+    text-align: center;
 }
 
 #location {
@@ -288,10 +358,11 @@ margin-right: 10px;
     }
 /* Home section */
 #home {
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -305,7 +376,6 @@ margin-right: 10px;
     height: 170px;
     font-size: 12px;
     flex-direction: column;
-    margin-left: 40px;
 }
 
 #location {
