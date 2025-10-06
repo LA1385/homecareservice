@@ -169,6 +169,7 @@ margin-right: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -225,12 +226,42 @@ margin-right: 10px;
     color: blue;
 }
 .step-arrow:nth-child(6) i {
-    color: yellow;
+    color:yellow;
 }
 /* Styling icons */
 #step-item .main-circle .icon:nth-child(1){
-    font-size: 30px;
+    font-size: 25px;
 }
+#step-item .main-circle .step-label:nth-child(2){
+    font-size: 20px;
+}
+
+/* Sty7ling the small circle */
+.badge-circle{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#step-item:nth-child(3) .badge-circle{
+    background-color: yellow;
+}
+#step-item:nth-child(7) .badge-circle {
+    background-color: yellow;
+}
+
 
 @media screen and (max-width:1023px) and (min-width:768px){
     /* header area */
@@ -252,6 +283,25 @@ margin-right: 10px;
     color:black ;
     background-color: grey;
     padding: 10px;
+   }
+   /* booking area */
+   #step-item {
+       
+       height: 90px;
+       width: 90px;
+   }
+
+   /* Styling icons */
+   #step-item .main-circle .icon:nth-child(1) {
+       font-size: 20px;
+   }
+   #step-item .main-circle .step-label:nth-child(2) {
+       font-size: 16px;
+   }
+   /* styling circle */
+   .badge-circle {
+       width: 28px;
+       height: 28px;
    }
 }
 
@@ -332,7 +382,29 @@ margin-right: 10px;
     padding-right: 20px;
     padding-top: 0;
 }
+/* booking area */
+
+#step-item {
+
+    height: 60px;
+    width: 60px;
 }
+
+/* Styling icons */
+#step-item .main-circle .icon:nth-child(1) {
+    font-size: 16px;
+}
+#step-item .main-circle .step-label:nth-child(2) {
+    font-size: 12px;
+}
+
+/* styling circle */
+.badge-circle {
+    width: 20px;
+    height: 20px;
+}
+}
+
 
 @media screen and (max-width:424px){
     /* media area */
@@ -402,5 +474,27 @@ margin-right: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0;
+}
+/* booking area */
+
+#step-item {
+
+    height: 60px;
+    width: 60px;
+}
+
+/* Styling icons */
+#step-item .main-circle .icon:nth-child(1) {
+    font-size: 16px;
+}
+
+#step-item .main-circle .step-label:nth-child(2) {
+    font-size: 12px;
+}
+
+/* styling circle */
+.badge-circle {
+    width: 20px;
+    height: 20px;
 }
 }
