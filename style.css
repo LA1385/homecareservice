@@ -11,6 +11,7 @@ body{
     margin-right: 0px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
@@ -20,11 +21,11 @@ body{
 }
 #right-media span{
 padding-right: 30px;
-flex-wrap: wrap;
+
 }
 #left-media span {
 padding-left: 30px;
-flex-wrap: wrap;
+
 }
 
 .header-nav{
@@ -262,6 +263,37 @@ margin-right: 10px;
     background-color: yellow;
 }
 
+/* Service Section */
+#services{
+    border: 1px solid red;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+.service-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-heading h3{
+    font-size: 1.5rem;
+}
+.service-heading p{
+    color: #444;
+}
+.service-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
 
 @media screen and (max-width:1023px) and (min-width:768px){
     /* header area */
@@ -408,6 +440,12 @@ margin-right: 10px;
 
 @media screen and (max-width:424px){
     /* media area */
+    .header-media {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     #right-media {
         display: none;
     }
