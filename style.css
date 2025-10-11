@@ -303,12 +303,14 @@ margin-right: 10px;
     border-radius: 10px;
 }
 #service-item:hover{
-    background-color: rgb(80, 80, 241);
+    background-color: rgb(60, 60, 233);
 }
 #service-item img{
     height: 80px;
     width: 80px;
     border-radius: 10px;
+}
+.left-service #service-item img{
     margin-right: 10px;
 }
 .right-service #service-item{
@@ -388,16 +390,31 @@ margin-right: 10px;
        width: 28px;
        height: 28px;
    }
+   /* service section */
+   .service-content{
+    font-size: 14px;
+   }
    .service-image {
        border: 3px solid blue;
-       height: 400px;
+       height: 300px;
        width: 200px;
    }
    .service-image img {
-       height: 400px;
+       height:300px;
        width: 200px;
        border: 1.5px solid white;
    }
+   #service-item {
+       padding: 7px;
+   }
+
+
+   #service-item img {
+       height: 60px;
+       width: 60px;
+       border-radius: 10px;
+   }
+
 }
 
 @media screen and (max-width:767px) and (min-width:425px){
@@ -504,6 +521,43 @@ margin-right: 10px;
     width: 20px;
     height: 20px;
 }
+/* Service section */
+.service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    font-size: 12px;
+}
+#text-service-heading {
+    text-align: center;
+}
+.service-content-image{
+    order: -1;
+    grid-column: 1/-1;
+    
+}
+.service-image {
+    border: 3px solid blue;
+    height: 300px;
+    width: 200px;
+}
+
+.service-image img {
+    height: 300px;
+    width: 200px;
+    border: 1.5px solid white;
+}
+
+#service-item {
+    padding: 5px;
+}
+
+
+#service-item img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
 }
 
 
@@ -603,5 +657,42 @@ margin-right: 10px;
 .badge-circle {
     width: 20px;
     height: 20px;
+}
+.service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 12px;
+}
+#text-service-heading{
+    text-align: center;
+}
+.service-content-image {
+    order: -1;
+    grid-column: 1/-1;
+
+}
+
+.service-image {
+    border: 3px solid blue;
+    height: 300px;
+    width: 200px;
+}
+
+.service-image img {
+    height: 300px;
+    width: 200px;
+    border: 1.5px solid white;
+}
+
+#service-item {
+    padding: 5px;
+}
+
+
+#service-item img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
 }
 }
