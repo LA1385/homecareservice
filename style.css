@@ -381,6 +381,139 @@ margin-right: 10px;
     border-bottom-right-radius: 47%;
 }
 
+/* TOP NURSES SECTION */
+#nurses{
+    margin-top: 0;
+    background-color: rgba(134, 163, 134, 0.5);
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-bottom: 30px;
+}
+.nurses-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nurses-heading h3 {
+    font-size: 1.5rem;
+}
+
+.nurses-heading p {
+    color: #444;
+}
+#text-nurses-heading{
+    line-height: 1;
+}
+
+.nurses-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.top-image-card{
+    position: relative;
+    width: 100%;
+    height:300px ;
+}
+#top-nurses img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.top-icon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 8px;
+}
+.top-icon span{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 20px;
+}
+#experience-badge{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #2196F3;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bottom-card{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bottom-card h5{
+    margin-top: 0;
+    font-size: 1rem;
+}
+#text-country{
+    font-size: 14px;
+    color: #666;
+}
+#work-percentage{
+    background-color: rgb(231, 231, 11);
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+#work-patients{
+    color:#666 ;
+    font-weight: bold;
+}
+#work-price{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+#per-time{
+    font-size: 1rem;
+    color: #666;
+}
+#work-distance{
+    background-color: #bbb;
+    color: #333;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    
+}
+.bottom-right-card button{
+    margin-top: 20px;
+    background-color: #15d;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 
 @media screen and (max-width:1023px) and (min-width:768px){
     /* header area */
@@ -446,6 +579,11 @@ margin-right: 10px;
        height: 60px;
        width: 60px;
        border-radius: 10px;
+   }
+
+   /* nurses section */
+   .nurses-content{
+    grid-template-columns: 1fr 1fr;
    }
 
 }
@@ -591,6 +729,9 @@ margin-right: 10px;
     width: 40px;
     border-radius: 10px;
 }
+.nurses-content {
+    grid-template-columns: 1fr;
+}
 }
 
 
@@ -727,5 +868,8 @@ margin-right: 10px;
     height: 40px;
     width: 40px;
     border-radius: 10px;
+}
+.nurses-content {
+    grid-template-columns: 1fr;
 }
 }
