@@ -513,6 +513,39 @@ margin-right: 10px;
     padding: 10px;
     border-radius: 20px;
 }
+.best-work{
+    height: 400px;
+    background: linear-gradient(to bottom,rgb(80, 80, 241) 50%,white 50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.best-work h3{
+    color: white;
+    font-size: 1.5rem;
+}
+.best-work span{
+    color: white;
+}
+.best-work iframe{
+    height: 315;
+    width: 560;
+}
+.best-work div{
+    display: flex;
+    gap: 10px;
+}
+.best-work button{
+    background-color:#15d ;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
 
 
 @media screen and (max-width:1023px) and (min-width:768px){
@@ -731,6 +764,10 @@ margin-right: 10px;
 }
 .nurses-content {
     grid-template-columns: 1fr;
+}
+.best-work iframe{
+    height: 415;
+    width: 460;
 }
 }
 
