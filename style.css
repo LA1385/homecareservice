@@ -393,21 +393,21 @@ margin-right: 10px;
     padding-right: 7.5%;
     padding-bottom: 30px;
 }
-.nurses-heading{
+.nurses-heading,.pricing-heading{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
-.nurses-heading h3 {
+.nurses-heading h3,.pricing-heading h3 {
     font-size: 1.5rem;
 }
 
-.nurses-heading p {
+.nurses-heading p,.pricing-heading p {
     color: #444;
 }
-#text-nurses-heading{
+#text-nurses-heading,#text-price-heading{
     line-height: 1;
 }
 
@@ -521,6 +521,7 @@ margin-right: 10px;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    border-bottom:1px solid black;
 }
 .best-work h3{
     color: white;
@@ -546,7 +547,139 @@ margin-right: 10px;
     outline: none;
     border: none;
 }
-
+#pricing {
+    margin-top: 0;
+    background-color: whitesmoke;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-bottom: 30px;
+}
+.price-content{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.price-levels{
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    box-shadow:2px 2px 1px grey;
+}
+.price-levels h4{
+    font-size: 1rem;
+}
+.price-levels h2{
+    font-size: 2.5rem;
+}
+.price-levels #month{
+    color: silver;
+    font-size: 1rem;
+}
+.price-levels h6{
+    font-size: 15px;
+    margin-bottom: 7.5px;
+}
+.price-levels li{
+    font-size: 14px;
+    padding-top:10px;
+    list-style: none;
+    margin-left: 0px;
+}
+.price-levels li span{
+    background-color: rgb(40, 230, 40);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.price-levels li #undone {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.price-levels:nth-child(2){
+    background-color:rgb(80, 80, 241);
+    color: white;
+    box-shadow: 2px 2px 1px black;
+}
+.price-levels button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(80, 80, 241),rgb(91, 230, 91));
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+.price-levels:nth-child(2) button{
+    color: black;
+    font-weight: bold;
+    background: white;
+}
+.footer{
+    background-color:rgb(80, 80, 241) ;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.top-footer p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.top-footer i{
+    font-size: 1.5rem;
+}
+.middle-footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+#Doccure{
+    display: block;
+}
+#Doccure h5{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+#mail{
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mail input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: black;
+}
+#mail button{
+    padding: 10px;
+    background-color:rgb(80, 80, 241) ;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
 
 @media screen and (max-width:1023px) and (min-width:768px){
     /* header area */
@@ -619,6 +752,16 @@ margin-right: 10px;
     grid-template-columns: 1fr 1fr;
    }
 
+    /* prices section */
+   .price-content {
+      padding: 0 20px;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 15px;
+   }
+   .price-levels:nth-child(3){
+    grid-column: 1/-1;
+    margin: 0 auto;
+   }
 }
 
 @media screen and (max-width:767px) and (min-width:425px){
@@ -769,6 +912,17 @@ margin-right: 10px;
     height: 415;
     width: 460;
 }
+/* prices section */
+.price-content {
+    padding: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+.price-levels:nth-child(3) {
+    grid-column: 1/-1;
+    margin: 0 auto;
+}
 }
 
 
@@ -909,4 +1063,10 @@ margin-right: 10px;
 .nurses-content {
     grid-template-columns: 1fr;
 }
+.price-content {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
 }
