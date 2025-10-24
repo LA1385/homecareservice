@@ -82,7 +82,7 @@ padding-left: 30px;
     padding: 10px;
     color: white;
     border-radius:20px;
-    padding-right: 7px;
+    padding-right: 5px;
     border: none;
     margin-right: 5px;
 }
@@ -538,6 +538,9 @@ margin-right: 10px;
     display: flex;
     gap: 10px;
 }
+.best-work span{
+    text-align: center;
+}
 .best-work button{
     background-color:#15d ;
     color: white;
@@ -637,6 +640,7 @@ margin-right: 10px;
 .top-footer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .top-footer p{
     font-size: 1.5rem;
@@ -645,10 +649,22 @@ margin-right: 10px;
 .top-footer i{
     font-size: 1.5rem;
 }
+#brands span{
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
 .middle-footer{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
+    align-items: center;
 }
 #Doccure{
     display: block;
@@ -663,7 +679,7 @@ margin-right: 10px;
     border-radius: 25px;
     width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 #mail input{
@@ -679,6 +695,39 @@ margin-right: 10px;
     color: white;
     border: none;
     outline: none;
+}
+.quicklinks li{
+    list-style: none;
+    padding: 10px;
+}
+.quicklinks a {
+    text-decoration: none;
+    color: white;
+}
+.quicklinks a:hover{
+    color: red;
+}
+.consumer-policy li{
+    list-style: none;
+    padding: 10px;
+}
+.consumer-policy a {
+    text-decoration: none;
+    color: white;
+}
+.consumer-policy a:hover {
+    color: red;
+}
+hr{
+    width: 100%;
+    border: 1px solid white;
+}
+.bottom-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width:1023px) and (min-width:768px){
@@ -761,6 +810,47 @@ margin-right: 10px;
    .price-levels:nth-child(3){
     grid-column: 1/-1;
     margin: 0 auto;
+   }
+   /* footer section */
+   .top-footer p {
+       font-size: 1rem;
+   }
+
+   .top-footer i {
+       font-size: 0.5rem;
+   }
+   #brands span {
+       padding: 5px;
+       margin-left: 5px;
+   }
+   .middle-footer {
+       grid-template-columns:2fr 1fr 1fr;
+       gap: 20px;
+       align-items: center;
+   }
+
+   #mail {
+       background-color: white;
+       padding: 10px;
+       border-radius: 25px;
+       width: 200px;
+       display: flex;
+       justify-content: none;
+       align-items: center;
+   }
+
+   #mail input {
+       font-size: 14px;
+   }
+
+   #mail button {
+       padding: 10px;
+       background-color: rgb(80, 80, 241);
+       border-radius: 20px;
+       color: white;
+       border: none;
+       outline: none;
+
    }
 }
 
@@ -923,6 +1013,49 @@ margin-right: 10px;
     grid-column: 1/-1;
     margin: 0 auto;
 }
+/* footer section */
+#brands span {
+    padding: 5px;
+    margin-left: 5px;
+}
+.top-footer p {
+    font-size: 1rem;
+}
+
+.top-footer i {
+    font-size: 0.5rem;
+}
+
+
+.middle-footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#mail {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: none;
+    align-items: center;
+}
+
+#mail input {
+    font-size: 14px;
+}
+
+#mail button {
+    padding: 10px;
+    background-color: rgb(80, 80, 241);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+
+}
 }
 
 
@@ -931,7 +1064,7 @@ margin-right: 10px;
     .header-media {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
     #right-media {
@@ -953,6 +1086,13 @@ margin-right: 10px;
         color: black;
         background-color: grey;
         padding: 10px;
+    }
+    .header-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+    #entry button {
+        font-size: 12px;
     }
 /* Home section */
 #home {
@@ -1067,6 +1207,50 @@ margin-right: 10px;
     padding: 0 20px;
     grid-template-columns: 1fr;
     gap: 20px;
+}
+
+#brands span {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.top-footer p {
+    font-size: 1rem;
+}
+
+.top-footer i {
+    font-size: 0.5rem;
+}
+
+
+.middle-footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#mail {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: none;
+    align-items: center;
+}
+
+#mail input {
+    font-size: 14px;
+}
+
+#mail button {
+    padding: 10px;
+    background-color: rgb(80, 80, 241);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+
 }
 
 }
