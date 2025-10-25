@@ -97,21 +97,28 @@ padding-left: 30px;
 }
 
 #dropdownNav{
-    display: none;
     position: fixed;
-    border-radius: 10px;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    background: white;
-    color:black;
-    font-weight: bold;
-    padding: 20px;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
     flex-direction: column;
-    opacity: 0;
-    transition:opacity 0.3s ;
+    justify-content: center;
+    align-items: center;
 }
 
+#dropdownNav li:nth-child(1){
+    background-color: #666;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 #dropdownNav li {
     padding-bottom:  20px ;
     list-style: none;
@@ -325,7 +332,7 @@ margin-right: 10px;
     grid-template-columns: 1.2fr 1.6fr 1.2fr;
     
 }
-#service-item{
+.service-item{
     border: 1px solid silver;
     display: flex;
     flex-direction: row;
@@ -334,18 +341,18 @@ margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
-#service-item:hover{
+.service-item:hover{
     background-color: rgb(66, 66, 207);
 }
-#service-item img{
+.service-item img{
     height: 80px;
     width: 80px;
     border-radius: 10px;
 }
-.left-service #service-item img{
+.left-service .service-item img{
     margin-right: 10px;
 }
-.right-service #service-item{
+.right-service .service-item{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -675,9 +682,9 @@ margin-right: 10px;
 }
 #mail{
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 25px;
-    width: 300px;
+    width: 250px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -785,12 +792,12 @@ hr{
        width: 200px;
        border: 1.5px solid white;
    }
-   #service-item {
+   .service-item {
        padding: 7px;
    }
 
 
-   #service-item img {
+   .service-item img {
        height: 60px;
        width: 60px;
        border-radius: 10px;
@@ -833,7 +840,7 @@ hr{
        background-color: white;
        padding: 10px;
        border-radius: 25px;
-       width: 200px;
+       width: 300px;
        display: flex;
        justify-content: none;
        align-items: center;
@@ -985,12 +992,12 @@ hr{
     border: 1.5px solid white;
 }
 
-#service-item {
+.service-item {
     padding: 5px;
 }
 
 
-#service-item img {
+.service-item img {
     height: 40px;
     width: 40px;
     border-radius: 10px;
@@ -1190,12 +1197,12 @@ hr{
     border: 1.5px solid white;
 }
 
-#service-item {
+.service-item {
     padding: 5px;
 }
 
 
-#service-item img {
+.service-item img {
     height: 40px;
     width: 40px;
     border-radius: 10px;
@@ -1233,7 +1240,7 @@ hr{
     background-color: white;
     padding: 10px;
     border-radius: 25px;
-    width: 300px;
+    width: 250px;
     display: flex;
     justify-content: none;
     align-items: center;
